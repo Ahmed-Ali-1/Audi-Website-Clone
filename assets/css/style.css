@@ -234,7 +234,7 @@
     }
 
     .Card-Container {
-        padding: 40px 30px;
+        padding: 40px 20px;
     }
 
     .cards-heading h1 {
@@ -255,7 +255,7 @@
 /* Driven-Section */
 
 .driven-section {
-    padding: 80px 90px 0;
+    padding: 40px 90px;
     display: flex;
 }
 
@@ -335,7 +335,7 @@
 
 @media (max-width:786px) {
     .driven-section {
-        padding: 40px 30px;
+        padding: 40px 20px;
     }
 
     .driven-content button {
