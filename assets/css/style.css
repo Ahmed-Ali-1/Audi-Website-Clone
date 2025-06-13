@@ -103,6 +103,7 @@
 
 .btnDiv button {
     padding: 16px 32px;
+    font-size: 16px;
 }
 
 @media (max-width:800px) {
@@ -181,9 +182,18 @@
     column-gap: 10px;
 }
 
-.card-content-anchor a {
-    color: #333333;
-    /* text-decoration: none; */
+
+.card-content-link a {
+    color: #000000;
+    text-underline-offset: 7.1px;
+    font-size: 15px;
+}
+
+.card-content-link .fa-greater-than {
+    height: 10px;
+    width: 0px;
+    font-size: 12px;
+
 }
 
 .card-content-anchor a:hover {
@@ -261,15 +271,28 @@
 }
 
 .driven-content p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
+}
+
+.driven-content p span {
+    font-size: 10px;
 }
 
 
 .driven-content button {
     padding: 16px 32px;
     width: fit-content;
+    border: 1px solid #505050;
     background-color: transparent;
+    font-size: 16px;
+   
+
+}
+.driven-content button:hover{
+    cursor: pointer;
+    transition: .4s;
+    color: #505050;
 }
 
 .driven-img {
@@ -426,8 +449,7 @@ ul {
     list-style: none;
 }
 
-.Footer-nav-links,
-a {
+.Footer-nav-links a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -453,6 +475,14 @@ a:hover {
     padding-right: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #787878;
+   
+}
+.social-icons a{
+ color: #fff;
+}
+.social-icons a:hover{
+   color: #a6a6a6;
+    transition: all .3s;
 }
 
 .reserved {
@@ -475,6 +505,17 @@ a:hover {
 
 .legal-content {
     flex-grow: 1;
+
+}
+
+.legal-content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+.legal-content a:hover{
+     color: #a6a6a6;
+    transition: all .3s;
 }
 
 .legal-content ul {
@@ -524,17 +565,18 @@ h3 {
     }
 
 }
+
 @media (max-width: 555px) {
     .navbar-topics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 30px;
-    row-gap: 50px;
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 30px;
+        row-gap: 50px;
+
     }
 
-    .social-icons{
+    .social-icons {
         display: flex;
         justify-content: center;
         padding-right: 0px;
