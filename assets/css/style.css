@@ -224,7 +224,7 @@
 @media (max-width:1440px) {
     .Cards-Main {
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 30px;
     }
 }
 
@@ -244,12 +244,18 @@
     .Card-Container {
         gap: 40px;
     }
+    .card-content{
+        gap: 30px;
+    }
+    .Cards{
+        gap: 30px;
+    }
 }
 
 /* Driven-Section */
 
 .driven-section {
-    padding: 80px 90px;
+    padding: 80px 90px 0;
     display: flex;
 }
 
@@ -308,8 +314,11 @@
     .driven-section {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
 
+    }
+    .only-reverse{
+        flex-direction: column-reverse;
     }
 
     .driven-content {
