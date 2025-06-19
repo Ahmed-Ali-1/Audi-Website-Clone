@@ -244,10 +244,12 @@
     .Card-Container {
         gap: 40px;
     }
-    .card-content{
+
+    .card-content {
         gap: 30px;
     }
-    .Cards{
+
+    .Cards {
         gap: 30px;
     }
 }
@@ -292,10 +294,11 @@
     border: 1px solid #505050;
     background-color: transparent;
     font-size: 16px;
-   
+
 
 }
-.driven-content button:hover{
+
+.driven-content button:hover {
     cursor: pointer;
     transition: .4s;
     color: #505050;
@@ -317,7 +320,8 @@
         gap: 40px;
 
     }
-    .only-reverse{
+
+    .only-reverse {
         flex-direction: column-reverse;
     }
 
@@ -456,6 +460,8 @@
 .Footer-nav-links,
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .Footer-nav-links a {
@@ -484,13 +490,15 @@ a:hover {
     padding-right: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #787878;
-   
+
 }
-.social-icons a{
- color: #fff;
+
+.social-icons a {
+    color: #fff;
 }
-.social-icons a:hover{
-   color: #a6a6a6;
+
+.social-icons a:hover {
+    color: #a6a6a6;
     transition: all .3s;
 }
 
@@ -522,8 +530,9 @@ a:hover {
     color: #fff;
     font-size: 12px;
 }
-.legal-content a:hover{
-     color: #a6a6a6;
+
+.legal-content a:hover {
+    color: #a6a6a6;
     transition: all .3s;
 }
 
@@ -558,6 +567,7 @@ a:hover {
 .navbar-topics,
 h3 {
     font-weight: 400;
+    margin: 0;
 }
 
 @media (max-width:1450px) {
@@ -567,27 +577,56 @@ h3 {
 
 }
 
-@media (max-width: 740px) {
-    .navbar-topics {
-        display: flex;
-        column-gap: 90px;
+@media (max-width: 768px) {
+    .hide-resp-navbar {
+        display: none;
+    }
+
+    .back-to-top {
+        margin-bottom: 40px;
+    }
+    .social-icons{
+        margin-top: 40px;
     }
 
 }
 
 @media (max-width: 555px) {
-    .navbar-topics {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        column-gap: 30px;
-        row-gap: 50px;
-
-    }
 
     .social-icons {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         padding-right: 0px;
     }
+}
+
+.accordion-header .accordion-button{
+    background-color: #000;
+    padding-left: 0 ;
+    padding-right: 0 ;
+    color: #fff;
+    
+}
+.accordion-button::after{
+    background-image: url(../images/Arrow.png)  ;
+    background-color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../images/Arrow.png)  ;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: #333333;
+    padding: 16px 0 16px 12px;
+}
+.accordion-item {
+    background: black;
+    border-top: 1px solid #4d4d4d !important;
+    border-bottom: 1px solid #4d4d4d !important;
+    border-radius: none;
 }
