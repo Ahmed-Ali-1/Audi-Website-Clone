@@ -20,11 +20,41 @@
     <section class="header">
         <div class="container p-0">
             <div class="navbar" id="top">
+
+                <!--MenuBar-->
+                <div class="MenuBar">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-bars"></i>
+                        Menu</button>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                        aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-header p-4">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                            <div class="rightside-navbar ms-auto">
+                                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                        <div class="offcanvas-body p-4">
+                            <div class="nav">
+                                <ul class="flex-column gap-4">
+                                    <li><a href="">Company</a></li>
+                                    <li><a href="">Inovation</a></li>
+                                    <li><a href="">Sustainability</a></li>
+                                    <li><a href="">Careers</a></li>
+                                    <li><a href="">Audi in sport</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--MenuBar-->
+
                 <div class="leftside-navbar">
                     <div class="logoDiv">
                         <a href=""><img src="./assets/images/logo.webp" alt="Logo"></a>
                     </div>
-                    <div class="nav">
+                    <div class="nav d-none d-xl-block">
                         <ul>
                             <li><a href="">Company</a></li>
                             <li><a href="">Inovation</a></li>
@@ -34,7 +64,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="rightside-navbar">
+                <div class="rightside-navbar d-none d-xl-block">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
             </div>
@@ -51,16 +81,20 @@
                     <div class="headingDiv">
                         <h1>Responsibility with a passion</h1>
                     </div>
-                    <div class="paraDiv">
-                        <p>Audi dealership Augsburg</p>
+                    <div class="paraDiv ">
+                        <p class="m-0">Audi dealership Augsburg</p>
                     </div>
 
-                    <div class="btnDiv">
+                    <div class="btnDiv d-md-block d-none">
                         <button type="button">Learn more</button>
                     </div>
                 </div>
             </div>
+            <div class="btnDiv py-5 px-4 bg-black d-md-none ">
+                <button class="w-100 " type="button">Learn more</button>
+            </div>
         </div>
+
     </section>
 
     <section class="Card-Section">

@@ -51,15 +51,39 @@
     color: #333333;
 }
 
-@media (max-width:825px) {
-    .nav {
-        display: none;
-    }
+.rightside-navbar i {
+    color: #000;
+
+}
+
+@media (max-width:1200px) {
 
     .navbar {
-        padding: 0px 20px;
+        padding: 0px 30px;
+        justify-content: center;
     }
 
+}
+
+
+.MenuBar .btn-primary {
+    background-color: transparent;
+    color: #000;
+    border: none;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.offcanvas-header .btn-close {
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+.offcanvas.offcanvas-top {
+    height: 100vh !important;
 }
 
 
@@ -101,15 +125,22 @@
 
 }
 
+
 .btnDiv button {
     padding: 16px 32px;
     font-size: 16px;
+    border: none;
+    background-color: #fff;
 }
 
-@media (max-width:800px) {
+@media (max-width:768px) {
     .content-section {
         left: 30px !important;
+    }
+
+    .content-section {
         gap: 10px;
+        bottom: 20px;
     }
 
     .headingDiv h1 {
@@ -572,7 +603,7 @@ h3 {
 
 @media (max-width:1450px) {
     .footer-section {
-        padding: 30px 40px 56px;
+        padding: 30px 30px 56px;
     }
 
 }
@@ -585,7 +616,8 @@ h3 {
     .back-to-top {
         margin-bottom: 40px;
     }
-    .social-icons{
+
+    .social-icons {
         margin-top: 40px;
     }
 
@@ -600,23 +632,24 @@ h3 {
     }
 }
 
-.accordion-header .accordion-button{
+.accordion-header .accordion-button {
     background-color: #000;
-    padding-left: 0 ;
-    padding-right: 0 ;
+    padding-left: 0;
+    padding-right: 0;
     color: #fff;
-    
+
 }
-.accordion-button::after{
-    background-image: url(../images/Arrow.png)  ;
+
+.accordion-button::after {
+    background-image: url(../images/Arrow.png);
     background-color: #fff;
 }
 
-.accordion-button:not(.collapsed)::after{
-    background-image: url(../images/Arrow.png)  ;
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/Arrow.png);
 }
 
-.accordion-button:focus{
+.accordion-button:focus {
     box-shadow: none;
 }
 
@@ -624,6 +657,7 @@ h3 {
     background-color: #333333;
     padding: 16px 0 16px 12px;
 }
+
 .accordion-item {
     background: black;
     border-top: 1px solid #4d4d4d !important;
