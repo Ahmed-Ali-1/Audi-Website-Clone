@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-.navbar {
+.navbarDiv {
     padding: 0px 90px;
     display: flex;
     justify-content: space-between;
@@ -58,17 +58,13 @@
 
 @media (max-width:1200px) {
 
-    .navbar {
+    .navbarDiv {
         padding: 0px 30px;
-        justify-content: center;
     }
 
 }
 
-
-.MenuBar .btn-primary {
-    background-color: transparent;
-    color: #000;
+.MenuBar .btn {
     border: none;
 }
 
