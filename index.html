@@ -18,13 +18,13 @@
 
 <body>
     <section class="header">
-        <div class="container p-0">
+        <div class="container-fluid p-0">
             <div class="navbarDiv" id="top">
 
                 <!--MenuBar-->
                 <div class="MenuBar d-xl-none">
                     <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-                        aria-controls="offcanvasTop"><i class="fa-solid fa-bars"></i>
+                        aria-controls="offcanvasTop"><i class="fa-solid fa-bars me-1"></i>
                         Menu</button>
                     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
                         aria-labelledby="offcanvasTopLabel">
@@ -72,21 +72,34 @@
     </section>
 
     <section class="banner">
-        <div class="container p-0">
+        <div class="container-fluid p-0">
             <div class="herosection">
-                <div class="banner-image">
+                <div class="banner-image d-none d-md-block">
                     <img src="./assets/images/Banner.avif" alt="Banner">
                 </div>
-                <div class="content-section">
-                    <div class="headingDiv">
-                        <h1>Responsibility with a passion</h1>
-                    </div>
-                    <div class="paraDiv ">
-                        <p class="m-0">Audi dealership Augsburg</p>
-                    </div>
+                <div class="banner-image MobileBanner d-md-none">
+                    <img src="./assets/images/MobileBanner.avif" alt="Banner">
+                </div>
+                <div class="back-shadow d-md-none">
+                </div>
 
-                    <div class="btnDiv d-md-block d-none">
-                        <button type="button">Learn more</button>
+                <div class="content-section">
+                    <div class="container p-0">
+                        <div class="Content">
+                            <div class="headingDiv">
+                                <h1 class="d-none d-md-block">Responsibility with a passion</h1>
+                                <h1 class="d-md-none">Into the future with software</h1>
+
+                            </div>
+                            <div class="paraDiv ">
+                                <p class="d-none d-md-block">Audi dealership Augsburg</p>
+                                <p class="d-md-none m-0">Audi is shaping the digital era with software-defined vehicles
+                                </p>
+                            </div>
+                            <div class="btnDiv d-md-block d-none">
+                                <button type="button">Learn more</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
