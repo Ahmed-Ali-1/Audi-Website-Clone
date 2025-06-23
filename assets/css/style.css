@@ -155,6 +155,10 @@
     border: none;
     background-color: #fff;
 }
+.btnDiv button:hover{
+background-color: #cfcfcf;
+transition: all 0.3s;
+}
 
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
