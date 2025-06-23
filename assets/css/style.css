@@ -15,6 +15,7 @@
     align-items: center;
 }
 
+
 .leftside-navbar {
     display: flex;
     align-items: center;
@@ -55,6 +56,10 @@
 
     .navbarDiv {
         padding: 0px 30px;
+    }
+
+    .emptyDiv {
+        margin-left: 65px;
     }
 
 }
