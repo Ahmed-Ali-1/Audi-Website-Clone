@@ -81,16 +81,19 @@
 .offcanvas.offcanvas-top {
     height: 100vh !important;
 }
-.offcanvas-body{
+
+.offcanvas-body {
     padding: 24px 28px;
-    
+
 }
-.mobile-nav-links li{
-    padding: 12px 0 ;
+
+.mobile-nav-links li {
+    padding: 12px 0;
 }
-.mobile-nav-links a{
+
+.mobile-nav-links a {
     text-decoration: none;
-    color:rgb(71, 71, 71);
+    color: rgb(71, 71, 71);
     font-size: 15px;
 }
 
@@ -155,13 +158,20 @@
     border: none;
     background-color: #fff;
 }
-.btnDiv button:hover{
-background-color: #cfcfcf;
-transition: all 0.3s;
+
+.btnDiv button:hover {
+    background-color: #cfcfcf;
+    transition: all 0.3s;
 }
 
 @media (min-width: 1400px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
         max-width: 1400px;
     }
 }
